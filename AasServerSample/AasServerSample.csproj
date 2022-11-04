@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <RootNamespace>DiceDigitalTwin</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="EasyModbusTCP" Version="5.6.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+        <PackageReference Include="BaSyx.AAS.Server.Http" Version="1.0.0" />
+        <PackageReference Include="BaSyx.Common.UI" Version="1.0.0" />
+        <PackageReference Include="BaSyx.Common.UI.Swagger" Version="1.0.0" />
+        <PackageReference Include="BaSyx.Models.Export" Version="1.0.0" />
+        <PackageReference Include="BaSyx.Registry.Client.Http" Version="1.0.0" />
+        <PackageReference Include="NLog.Web.AspNetCore" Version="5.1.5" />
+        <PackageReference Include="System.IO.Ports" Version="6.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Content\robot.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+      </None>
+      <None Update="Content\Template.aasx">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+        
+    </ItemGroup>
+
+</Project>
